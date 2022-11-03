@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e45db4db-348a-4d30-aa1c-80eab77a009f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 1/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons JS.iml" afterDir="false" />
+    <list default="true" id="e45db4db-348a-4d30-aa1c-80eab77a009f" name="Changes" comment="Lesson 1 JS HW1 done">
+      <change afterPath="$PROJECT_DIR$/Lesson 2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 2/scratch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +14,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -40,9 +37,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "advanced.settings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JavaScript",
+      "PLAIN_TEXT"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DeDuShKa\Project IJ\Lessons JS\Lesson 2" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\DeDuShKa\AppData\Roaming\Subversion</configuration>
@@ -54,8 +62,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667251575153</updated>
-      <workItem from="1667251576552" duration="2899000" />
+      <workItem from="1667251576552" duration="3295000" />
+      <workItem from="1667416830860" duration="330000" />
+      <workItem from="1667483961697" duration="4133000" />
     </task>
+    <task id="LOCAL-00001" summary="Lesson 1 JS HW1 done">
+      <created>1667254710979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667254710979</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,6 +89,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson 1 JS HW1 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 1 JS HW1 done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
