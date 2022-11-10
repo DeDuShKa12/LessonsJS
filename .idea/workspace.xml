@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e45db4db-348a-4d30-aa1c-80eab77a009f" name="Changes" comment="Lesson 2 JS HW done">
-      <change afterPath="$PROJECT_DIR$/Lesson 3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 3/main.js" afterDir="false" />
+    <list default="true" id="e45db4db-348a-4d30-aa1c-80eab77a009f" name="Changes" comment="Lesson 4 JS HW done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 3/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 4/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 4/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Lesson 4/main.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -65,7 +68,13 @@
       <workItem from="1667251576552" duration="3295000" />
       <workItem from="1667416830860" duration="330000" />
       <workItem from="1667483961697" duration="4262000" />
-      <workItem from="1667917123518" duration="8354000" />
+      <workItem from="1667917123518" duration="8660000" />
+      <workItem from="1667930216648" duration="757000" />
+      <workItem from="1668074428893" duration="3688000" />
+      <workItem from="1668078575158" duration="604000" />
+      <workItem from="1668079221460" duration="252000" />
+      <workItem from="1668079778029" duration="3494000" />
+      <workItem from="1668083834377" duration="1610000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 1 JS HW1 done">
       <created>1667254710979</created>
@@ -81,7 +90,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667488300660</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lesson 3 JS HW done">
+      <created>1667925884207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667925884207</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Lesson 4 JS HW done">
+      <created>1668083294604</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668083294604</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +124,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson 1 JS HW1 done" />
     <MESSAGE value="Lesson 2 JS HW done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 2 JS HW done" />
+    <MESSAGE value="Lesson 3 JS HW done" />
+    <MESSAGE value="Lesson 4 JS HW done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 JS HW done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

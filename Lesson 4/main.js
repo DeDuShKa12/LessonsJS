@@ -267,10 +267,12 @@
 
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
-//
+// document.write('<ul>');
 // let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 //
-// for (let i = 0; i < listOfItems.length; i++) document.write(`<ul><li>${listOfItems[i]}</li></ul>`)
+// for (let i = 0; i < listOfItems.length; i++)
+//     document.write(`<li>${listOfItems[i]}</li>`)
+// document.write('</ul>');
 
 
 // Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -300,28 +302,30 @@
 //     },
 // ];
 //
-// for (let i = 0; i < products.length; i++) document.write(`
+// for (let i = 0; i < products.length; i++) { document.write(`
 // <div class="product-card">
-//         <h3 class="product-title">Titel - ${products[i].title}. Price - ${products[i].price}</h3>
+//         <h3 class="product-title">Title - ${products[i].title}. Price - ${products[i].price}</h3>
 //         <img src="${products[i].image}" alt="${products[i].title}" class="product-image">
 // </div>`)
+// }
+
 
 
 // ----------------------є масив---------------------
 
-let users = [
-    {name: 'vasya', age: 31, status: false},
-    {name: 'petya', age: 30, status: true},
-    {name: 'kolya', age: 29, status: true},
-    {name: 'olya', age: 28, status: false},
-    {name: 'max', age: 30, status: true},
-    {name: 'anya', age: 31, status: false},
-    {name: 'oleg', age: 28, status: false},
-    {name: 'andrey', age: 29, status: true},
-    {name: 'masha', age: 30, status: true},
-    {name: 'olya', age: 31, status: false},
-    {name: 'max', age: 31, status: true}
-];
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
 
 // за допомоги циклу вивести:
 
@@ -329,7 +333,7 @@ let users = [
 //
 // for (let user of users) {
 //     if (user.status) {
-//         document.write(`<ul><li>${user.name}</li></ul>`)
+//         document.write(`<div>${user.name}</div>`)
 //     }
 //
 // }
@@ -338,7 +342,7 @@ let users = [
 // - користувачів зі статусом false
 // for (let user of users) {
 //     if (!user.status) {
-//         document.write(`<ul><li>${user.name}</li></ul>`)
+//         document.write(`<div>${user.name}</div>`)
 //     }
 //
 // }
@@ -347,7 +351,7 @@ let users = [
 // - користувачів які старші за 30 років
 // for (let user of users) {
 //     if (user.age > 30) {
-//         document.write(`<ul><li>${user.name}</li></ul>`)
+//         document.write(`<div>${user.name}</div>`)
 //     }
 //
 // }
