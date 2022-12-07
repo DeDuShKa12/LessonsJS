@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e45db4db-348a-4d30-aa1c-80eab77a009f" name="Changes" comment="Lesson 4 JS HW done1">
-      <change afterPath="$PROJECT_DIR$/Lesson 5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 5/main.js" afterDir="false" />
+    <list default="true" id="e45db4db-348a-4d30-aa1c-80eab77a009f" name="Changes" comment="Lesson 6 JS HW done">
+      <change afterPath="$PROJECT_DIR$/Lesson 8/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 8/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 6/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 6/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,15 @@
       <workItem from="1668079778029" duration="3494000" />
       <workItem from="1668083834377" duration="1631000" />
       <workItem from="1668524953908" duration="2136000" />
-      <workItem from="1668527458288" duration="9084000" />
+      <workItem from="1668527458288" duration="9426000" />
+      <workItem from="1669051164433" duration="4107000" />
+      <workItem from="1669197661522" duration="8793000" />
+      <workItem from="1669320948776" duration="12313000" />
+      <workItem from="1669829629620" duration="2072000" />
+      <workItem from="1669936057947" duration="2001000" />
+      <workItem from="1670365187760" duration="18957000" />
+      <workItem from="1670406427280" duration="452000" />
+      <workItem from="1670408134991" duration="5535000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 1 JS HW1 done">
       <created>1667254710979</created>
@@ -113,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668085467432</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lesson 5 JS HW done">
+      <created>1668537409069</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668537409069</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Lesson 6 JS HW done">
+      <created>1669346333207</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669346333207</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +159,9 @@
     <MESSAGE value="Lesson 3 JS HW done" />
     <MESSAGE value="Lesson 4 JS HW done" />
     <MESSAGE value="Lesson 4 JS HW done1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 JS HW done1" />
+    <MESSAGE value="Lesson 5 JS HW done" />
+    <MESSAGE value="Lesson 6 JS HW done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 6 JS HW done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
