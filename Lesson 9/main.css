@@ -1,0 +1,81 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+}
+.main {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 50vh;
+    background: silver;
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: 80%;
+    height: 5%;
+
+}
+.modules {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 70%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+.divOfModuls {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+}
+.modulesName {
+    box-sizing: border-box;
+    justify-content: center;
+}
+.modulesName3 {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: 95%;
+}
+
+.lowerMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+
+}
+.monthDuration{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    border: 2px solid black;
+}
+.hourDuration{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    border: 2px solid black;
+}
