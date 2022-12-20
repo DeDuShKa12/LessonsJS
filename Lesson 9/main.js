@@ -44,13 +44,18 @@
 //
 //
 // for (const simpson of simpsons) {
-//     let div = document.createElement('div', );
+//     const {name, surname, age, info, photo} = simpson
+//     let div = document.createElement('div');
 //     div.setAttribute('class', 'member');
-//     div.innerText = `name - ${simpson.name}, surname - ${simpson.surname}, age - ${simpson.age}, ${simpson.info}, ${simpson.photo} `
+//
+//     let simpsonDiv = document.createElement('div');
+//     simpsonDiv.innerText = `name - ${simpson.name}, surname - ${simpson.surname}, age - ${simpson.age}, ${simpson.info} `
+//     let img = document.createElement('img');
+//     img.src = photo
+//     div.append(simpsonDiv, img)
 //     document.body.appendChild(div)
 //
 // }
-
 
 
 // Цикл в циклі
@@ -125,26 +130,34 @@
 //     }
 // ];
 //
-// // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
-// // Приклад структири знаходиться у файлі example.png
+// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
+// Приклад структири знаходиться у файлі example.png
 //
 // for (const coursesArrayElement of coursesArray) {
+//
 //     let div0 = document.createElement('div');
 //     div0.setAttribute('class', 'main')
 //     document.body.appendChild(div0)
+//
 //     let div1 = document.createElement('div');
 //     div1.setAttribute('class','title')
+//     div1.innerHTML = `${coursesArrayElement.title}`
+//
 //     let div2 = document.createElement('div');
 //     div2.setAttribute('class','monthDuration')
+//     div2.innerHTML = `Month Duration: ${coursesArrayElement.monthDuration}`
+//
 //     let div3 = document.createElement('div');
 //     div3.setAttribute('class','hourDuration')
+//     div3.innerHTML = `Hour Duration: ${coursesArrayElement.hourDuration}`
+//
 //     let divForLi = document.createElement('div');
 //     divForLi.setAttribute('class', 'divOfModuls')
+//
 //     let ul = document.createElement('ul');
 //     ul.setAttribute('class','modules')
-//     div1.innerHTML = `${coursesArrayElement.title}`
-//     div2.innerHTML = `Month Duration: ${coursesArrayElement.monthDuration}`
-//     div3.innerHTML = `Hour Duration: ${coursesArrayElement.hourDuration}`
+//
+//
 //     let div00 = document.createElement('div')
 //     div00.setAttribute('class', 'lowerMain')
 //     div00.append(div2, div3)
@@ -152,25 +165,24 @@
 //     divForLi.append(ul)
 //
 //
-//     for (let i = 0; i < 3; i++) {
-//         let div = document.createElement('div');
-//         div.setAttribute('class','modulesName3')
-//         div.innerHTML = `${coursesArrayElement.modules[i]}`
-//         divForLi.appendChild(div)
 //
-//     }
-//
-//     for (let i = 3; i < coursesArrayElement.modules.length; i++) {
-//         let li = document.createElement('li');
-//         li.setAttribute('class','modulesName')
-//         li.innerHTML = `${coursesArrayElement.modules[i]}`
-//         ul.appendChild(li)
-//
+//     for (let i = 0; i < coursesArrayElement.modules.length; i++) {
+//         if (i < 3) {
+//             let div = document.createElement('div');
+//             div.setAttribute('class','modulesName3')
+//             div.innerHTML = `${coursesArrayElement.modules[i]}`
+//             divForLi.appendChild(div)
+//         }
+//         else if (i > 3){
+//             let li = document.createElement('li');
+//             li.setAttribute('class', 'modulesName')
+//             li.innerHTML = `${coursesArrayElement.modules[i]}`
+//             ul.appendChild(li)
+//         }
 //     }
 //     divForLi.append(ul)
 //
 // }
-
 
 
 // //     - створити блок,
@@ -198,8 +210,6 @@
 // document.body.append(newDiv.cloneNode(true))
 
 
-
-
 // // - Є масив:
 //   let arr = ['Main','Products','About us','Contacts']
 // // Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
@@ -215,10 +225,7 @@
 // }
 
 
-
-
-
-// - Є масив
+// // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
 //     {title: 'Java Complex', monthDuration: 6},
@@ -240,7 +247,6 @@
 // }
 
 
-
 // // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -256,13 +262,16 @@
 // //     Завдання робити через цикли.
 //
 // for (const ArrayElement of coursesAndDurationArray) {
+//
 //     let div = document.createElement('div');
 //     div.classList.add('item')
 //     document.body.append(div)
+//
 //     let h1 = document.createElement('h1');
 //     h1.classList.add('heading')
 //     h1.innerText = `${ArrayElement.title}`
 //     div.append(h1)
+//
 //     let p = document.createElement('p');
 //     p.classList.add('description')
 //     p.innerText = `${ArrayElement.monthDuration}`
@@ -270,39 +279,41 @@
 // }
 
 
-
 // //     - Створити довільний елемент з id = text.  Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
 //
 // let div = document.createElement('div')
 // div.innerText = 'Lorem'
 // div.setAttribute('id', 'text')
+//
 // let button = document.createElement('button')
 // button.innerText = 'push'
+//
 // document.body.append(div,button)
+//
 // button.onclick = () => {
 //     div.style.display = 'none'
 // }
-
 
 
 // //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати
 // //     інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 //
 // let input = document.createElement('input');
+//
 // let button = document.createElement('button');
 // button.innerText = 'click'
+//
 // document.body.append(input, button)
-// button.onclick = function (e) {
-//     input.onclick;
-//     if (input.value < 18 ) {
-//        return  document.write('ще малий')
-//     }
-//     else if (input.value > 18) {
+//
+// button.onclick = (e) => {
+//     input.oninput;
+//     if (input.value < 18) {
+//         return document.write('ще малий')
+//     } else if (input.value > 18) {
 //         return document.write('старічьок')
 //     }
 //
 // }
-
 
 
 // // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
@@ -310,32 +321,47 @@
 // // (Додатковачастина для завдання)
 //
 //
+// let input1 = document.createElement('input');
+// document.body.append(input1)
+//
+// let input2 = document.createElement('input');
+// document.body.append(input2)
+//
+// let input3 = document.createElement('input');
+// document.body.append(input3)
+//
 // let button = document.createElement('button');
 // button.innerText = 'click'
 // document.body.append(button)
-// let input1 = document.createElement('input');
-// document.body.append(input1)
-// let input2 = document.createElement('input');
-// document.body.append(input2)
-// let input3 = document.createElement('input');
-// document.body.append(input3)
+//
 // let ul = document.createElement('ul');
 // document.body.append(ul)
 //
-// button.onclick = function () {
-// for (let i = 0; i < input1.value; i++) {
-//     let li = document.createElement('li');
-//     li.innerText = 'text'
-//     ul.append(li)
-// }
+// button.onclick = () => {
+//     let tr = input1.value
+//     let td = input2.value
+//     let text = input3.value
 //
-// for (let i = 0; i < input2.value; i++) {
-//     let div = document.createElement('div');
-//     document.body.append(div)
-//     div.style.height = '100px'
-//     div.style.width = '100px'
-//     div.style.background = 'red'
-//     div.innerText = input3.value
-// }
+//     function genTable(raws, columns, words) {
+//         let table = document.createElement('table');
+//         table.style.border = '2px solid black'
+//         document.body.append(table)
 //
+//         for (let i = 0; i < raws; i++) {
+//             let raw = document.createElement('tr');
+//             table.append(raw)
+//
+//
+//         for (let i = 0; i < columns; i++) {
+//             let colum = document.createElement('td');
+//             colum.style.width = '100px'
+//             colum.style.background = 'red'
+//             colum.style.height = '100px'
+//             colum.innerText = words
+//             raw.append(colum)
+//         }}
+//
+//     }
+//
+//     genTable(tr, td, text)
 // }

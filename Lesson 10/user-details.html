@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Details</h2>
+<script>
+    const url = new URL(location.href);
+    const id = url.searchParams.get('id');
+
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .then(value => value.json())
+        .then(value => {
+            for (const user in value) {
+                if (typeof value[user] !== 'object') {
+                    let userDiv = document.createElement('div');
+                    userDiv.innerText = `${user} ${value[user]}`
+                    document.body.append(userDiv)
+                }
+                else if (typeof value[user] === 'object') {
+                    for (const userField in value[user]) {
+                        if (typeof value[user][userField] !== 'object') {
+                        let divUserField = document.createElement('div');
+                        divUserField.innerText = `${userField} -- ${value[user][userField]} `
+                        document.body.append(divUserField)}
+
+                        else if (typeof value[user][userField] === 'object') {
+                            for (const userFieldItem in  value[user][userField]) {
+                                let userFieldItemDiv = document.createElement('div');
+                                userFieldItemDiv.innerText = `${userFieldItem} ${value[user][userField][userFieldItem]}`
+                                document.body.append(userFieldItemDiv)
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        })
+
+</script>
+</body>
+</html>
