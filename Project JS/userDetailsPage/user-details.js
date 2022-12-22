@@ -19,11 +19,12 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
         for (const item in value) {
             let userInfo = document.createElement('div');
+            userInfo.classList.add('userInfo')
 
 
             if (typeof value[item] !== 'object') {
 
-                userInfo.innerText = `${item} --- ${value[item]}`
+                userInfo.innerText = `${item} - ${value[item]}`
 
 
             } else {
@@ -35,16 +36,18 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
                     let keyDiv = document.createElement('div');
 
+
                     if (typeof value[item][key] !== 'object') {
 
-                        keyDiv.innerText = `${key} --- ${value[item][key]}`
+                        keyDiv.innerText = `${key} - ${value[item][key]}`
 
                     } else {
                         keyDiv.innerText = `${key}:`
                         for (const element in value[item][key]) {
                             let innerKeyDiv = document.createElement('div');
+
                             if (typeof value[item][key][element] !== 'object') {
-                                innerKeyDiv.innerText = `${element} --- ${value[item][key][element]}`
+                                innerKeyDiv.innerText = `${element} - ${value[item][key][element]}`
                             }
                             keyDiv.append(innerKeyDiv)
                         }
@@ -57,50 +60,55 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
 
         }
+        let buttonAndText = document.createElement('div');
+        buttonAndText.classList.add('btnAndTxt')
+        document.body.appendChild(buttonAndText)
 
-        let h4 = document.createElement('h4');
-        h4.innerText = `Post of current user`
-        document.body.appendChild(h4)
+        let h3 = document.createElement('h3');
+        h3.innerText = `Posts of current user`
         let btn = document.createElement('button')
         btn.classList.add('buttonForPosts')
-        btn.innerText = `Show`
-        document.body.appendChild(btn)
+        btn.innerText = `Show posts`
+
+        buttonAndText.append(h3, btn)
 
         fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
             .then(value => value.json())
             .then(value => {
-                let postDiv = document.createElement('div');
-                postDiv.classList.add('postDiv')
-                document.body.appendChild(postDiv)
+                let postsDiv = document.createElement('div');
+                postsDiv.classList.add('postsDiv', 'none')
+                document.body.appendChild(postsDiv)
 
                 for (const post of value) {
-                    let h3 = document.createElement('h3');
-                    h3.innerText = `${post.title}`
+                    let postDiv = document.createElement('div');
+                    postDiv.classList.add('post')
+                    postsDiv.append(postDiv)
+                    let title = document.createElement('div');
+                    title.classList.add('titleClass')
+                    title.innerText = `${post.title}`
 
                     let postBTN = document.createElement('button');
+                    postBTN.innerText = 'SHOW'
                     postBTN.classList.add('postButton')
 
-                    postDiv.append(h3, postBTN)
-
-                    let a = document.createElement('a');
-                    a.href = '../postDetailsPage/post-details.html?data=' + JSON.stringify(post)
-                    a.innerText = 'SHOW'
-                    postBTN.append(a)
+                    postBTN.onclick = () => {
+                       location.href = '../postDetailsPage/post-details.html?data=' + JSON.stringify(post)
+                    }
+                    postDiv.append(title, postBTN)
 
                 }
-                postDiv.hidden = true
 
                 btn.onclick = () => {
-                    if (postDiv.hidden === false) {
-                        postDiv.hidden = true
-                        btn.innerText = `Show`
+                    postsDiv.classList.toggle('none')
+                    if (postsDiv.className === 'postsDiv none') {
+                        btn.innerText = `Show posts`
+                    }
+                    else if (postsDiv.className !== 'none') {
+                        btn.innerText = `Hide posts`
                     }
 
-                    else {
-                        postDiv.hidden = false
-                        btn.innerText = `Hide`
-                    }
                 }
+
 
             })
 

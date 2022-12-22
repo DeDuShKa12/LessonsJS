@@ -29,7 +29,12 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
 
 
             let btnUserDetails = document.createElement('button');
+            // btnUserDetails.innerText = 'More information'
             btnUserDetails.classList.add('button')
+            //
+            // btnUserDetails.onclick = () => {
+            //     location.href = '../userDetailsPage/user-details.html?id='
+            // }
             let a = document.createElement('a');
             a.innerText = 'More information'
             a.href = `../userDetailsPage/user-details.html?id=${value[i].id}`
