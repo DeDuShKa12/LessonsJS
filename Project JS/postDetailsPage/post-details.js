@@ -10,6 +10,10 @@ let url = new URL(location.href);
 let data = url.searchParams.get('data');
 let parse = JSON.parse(data);
 
+let postDiv = document.createElement('div');
+postDiv.classList.add('mainBox')
+document.body.appendChild(postDiv)
+
 let postInfo = document.createElement('div');
 postInfo.classList.add('postInfo')
 let postText = document.createElement('div');
@@ -21,16 +25,25 @@ for (const item in parse) {
         let Info = document.createElement('div');
         Info.classList.add('Info')
         Info.innerText = `${item} --- ${parse[item]}`
+
         postInfo.appendChild(Info)
-    } else {
-        let Text = document.createElement('div');
-        Text.classList.add('Text')
-        Text.innerText = `${parse[item]}`
-        postText.append(Text)
+    } else if (item === 'title'){
+        let postTitle = document.createElement('div');
+        postTitle.classList.add('title')
+        postTitle.innerText = `${parse[item]}`
+        postText.append(postTitle)
+    }
+    else if (item === 'body') {
+        let text = document.createElement('div');
+        text.classList.add('text')
+        text.innerText = `${parse[item]}`
+        postText.append(text)
+
     }
 
 }
-console.log(parse.id);
+
+postDiv.append(postInfo, postText)
 
 
 fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}/comments`)
@@ -48,19 +61,29 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}/comments`)
             for (const key in element) {
                 if (key === 'id') {
 
-                    fetch(`https://jsonplaceholder.typicode.com/users/${element.id}`)
+                    fetch(`https://jsonplaceholder.typicode.com/users/${element.id}`) // я зробив щоб замість виведення поточного айді юзера, воно підбирало по цьому айді через інше посилання юзера
                         .then(value => value.json())
                         .then(value => {
 
-                            let nameComentator = document.createElement('div');
-                            nameComentator.innerText = `${value.name}`
-                            commentDiv.prepend(nameComentator)
+                            let nameCommentator = document.createElement('div');
+                            nameCommentator.classList.add('nameCommentator')
+                            nameCommentator.innerText = `${value.name}`
+                            commentDiv.prepend(nameCommentator)
 
                         })
-                } else {
+
+                }
+                else if (key === 'body' || key === 'name' ) {
                     let comment = document.createElement('div');
 
-                    comment.innerText = `${key} ${element[key]}`
+                    comment.innerText = `${element[key]}`
+
+                    commentDiv.append(comment)
+                }
+                else {
+                    let comment = document.createElement('div');
+
+                    comment.innerText = `${key}: ${element[key]}`
 
                     commentDiv.append(comment)
                 }

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e45db4db-348a-4d30-aa1c-80eab77a009f" name="Changes" comment="Lesson 6 JS HW done">
-      <change afterPath="$PROJECT_DIR$/Lesson 8/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 8/main.js" afterDir="false" />
+    <list default="true" id="e45db4db-348a-4d30-aa1c-80eab77a009f" name="Changes" comment="Project JS FirstPage and SecondPage done">
+      <change afterPath="$PROJECT_DIR$/Project JS/postDetailsPage/post-details.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 6/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 6/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project JS/mainPage/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project JS/mainPage/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project JS/postDetailsPage/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project JS/postDetailsPage/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project JS/postDetailsPage/post-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project JS/postDetailsPage/post-details.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -85,7 +87,18 @@
       <workItem from="1669936057947" duration="2001000" />
       <workItem from="1670365187760" duration="18957000" />
       <workItem from="1670406427280" duration="452000" />
-      <workItem from="1670408134991" duration="5535000" />
+      <workItem from="1670408134991" duration="5714000" />
+      <workItem from="1670568327877" duration="106000" />
+      <workItem from="1670568446184" duration="2282000" />
+      <workItem from="1670577733230" duration="12883000" />
+      <workItem from="1670625700982" duration="5792000" />
+      <workItem from="1670839108057" duration="5049000" />
+      <workItem from="1671195727030" duration="4407000" />
+      <workItem from="1671455202356" duration="2669000" />
+      <workItem from="1671539933952" duration="7827000" />
+      <workItem from="1671556269707" duration="5974000" />
+      <workItem from="1671715606609" duration="22128000" />
+      <workItem from="1671799518386" duration="5368000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 1 JS HW1 done">
       <created>1667254710979</created>
@@ -136,7 +149,42 @@
       <option name="project" value="LOCAL" />
       <updated>1669346333207</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lesson 8 JS HW done">
+      <created>1670425718053</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670425718053</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Lesson 9 JS HW done">
+      <created>1670636897361</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670636897361</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Lesson 10 JS HW done">
+      <created>1671541944883</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671541944884</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Project JS FirstPage Done">
+      <created>1671725943718</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671725943718</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Project JS FirstPage and SecondPage done">
+      <created>1671737693008</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671737693008</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +209,12 @@
     <MESSAGE value="Lesson 4 JS HW done1" />
     <MESSAGE value="Lesson 5 JS HW done" />
     <MESSAGE value="Lesson 6 JS HW done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 6 JS HW done" />
+    <MESSAGE value="Lesson 8 JS HW done" />
+    <MESSAGE value="Lesson 9 JS HW done" />
+    <MESSAGE value="Lesson 10 JS HW done" />
+    <MESSAGE value="Project JS FirstPage Done" />
+    <MESSAGE value="Project JS FirstPage and SecondPage done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project JS FirstPage and SecondPage done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
